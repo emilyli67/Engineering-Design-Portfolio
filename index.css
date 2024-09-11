@@ -1,0 +1,120 @@
+
+body {
+    background-color: #4a7a6e;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* **************************** */
+/* Style for the header section */
+/* **************************** */
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    background: rgba(74, 122, 110, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.header .name {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.header .navbar {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5em;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* ************************** */
+/* Style for the home section */
+/* ************************** */
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: rgba(74, 122, 110, 0.5);
+    padding: 5px;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 1.5em;
+    margin: 20px 0 40px;
+    background: rgba(74, 122, 110, 0.5);
+    padding: 5px;
+}
+
+/* ************************************* */
+/* Style for the project listing section */
+/* ************************************* */
+
+.portfolio {
+    padding-block: 5rem 2rem;
+    max-width: 100%;
+    margin-inline: 1.5rem;
+
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+}
+
+.project-card {
+    padding: 5px;
+    margin: 5px;
+    background-color: #e0a66a;
+    text-align: center;
+}
+
+.project-link {
+    color: #4d3a2c;
+}
+
+.project-title {
+    font-size: 1.5em;
+}
+
+.project-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: calc(27vw);
+    object-fit: cover;
+}

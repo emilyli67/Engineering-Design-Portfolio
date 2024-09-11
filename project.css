@@ -1,0 +1,96 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* **************************** */
+/* Style for the header section */
+/* **************************** */
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-width: 800px;
+    background: rgba(250, 250, 250, 0.80);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    color: #00abf0;
+    border-radius: 10px;
+}
+
+.header .name {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.header .navbar {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5em;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: #00abf0;
+    padding: 10px;
+}
+
+/* *********************************** */
+/* Style for the project documentation */
+/* *********************************** */
+
+.proj-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.proj-header {
+    text-align: center;
+    color: #2596be;
+}
+
+.proj-img-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.proj-img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.proj-desc {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.proj-desc p {
+    color: #21130d;
+}
+
+.proj-code {
+    max-width: 700px;
+    margin: auto;
+}
+
+.proj-code pre:has(code), pre:has(code) {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+}
+pre code, pre code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
